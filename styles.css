@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  header {
+    background-color: #3b3b3b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .main-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px; /* Agrega margen superior */
+  }
+  
+  img {
+    max-width: 20%;
+    border-radius: 40px; /* Hace los bordes de la imagen más circulares */
+    height: auto;
+    margin-right: 40px; /* Añade espacio entre la imagen y los textos */
+    margin-left: 30px; /* Añade espacio debajo de la imagen */
+  }
+  
+  .personal-info {
+    margin-left: 20px;
+    max-width: calc(100% - 120px);
+  }
+
+  h2 span, h3 span {
+    font-weight: normal; /* Quita la negrita del texto dentro de los elementos <span> */
+  }
+  
+  h2 a {
+    color: blue; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+  }
+  
+  footer {
+    background-color: #3b3b3b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute; /* Cambiado a posición absoluta */
+    width: 97.9%; /* Ajusta el ancho para que cubra toda la pantalla */
+    bottom: 0; /* Coloca el footer al final de la página */
+  }
+  
+  footer img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto; /* Centra horizontalmente la imagen dentro del footer */
+  }
+  
+  /* Media Query para dispositivos con pantallas de hasta 768px (tablets y móviles) */
+  @media only screen and (max-width: 768px) {
+    .main-content {
+      flex-direction: column; /* Para móviles: coloca la imagen arriba y los textos debajo */
+      align-items: flex-start; /* Alinea los elementos al principio */
+    }
+  
+    /* Ajustes para los enlaces */
+    h2 {
+      margin-bottom: 10px; /* Agrega espacio entre los elementos */
+    }
+  
+    /* Ajusta el tamaño de fuente para los enlaces */
+    h2 a {
+      color: blue; /* Color del enlace */
+      text-decoration: none; /* Elimina el subrayado predeterminado */
+      display: inline; /* Cambia el comportamiento de visualización a en línea */
+      max-width: calc(80% - 80px); /* Establece un ancho máximo para el enlace */
+      word-break: break-word; /* Permite que el enlace haga un salto de línea */
+    }
+  
+    img {
+      align-items: center;
+      max-width: 80%;
+      border-radius: 40px; /* Hace los bordes de la imagen más circulares */
+      margin-bottom: 15px; /* Agrega espacio entre la imagen y los textos */
+    }
+  
+    footer {
+      width: auto;
+      height: auto;
+      position: relative;
+    }
+  }
+  
